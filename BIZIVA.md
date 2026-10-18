@@ -23,3 +23,5 @@ O aplicativo web compilado original está em src/main/webapp. Os módulos Biziva
 As funções de colaboração, armazenamento remoto e IA do upstream exigem configuração própria. Nesta publicação o trabalho fica no navegador; o login identifica a sessão e não promete sincronização. 
 
 O login não inclui crédito de IA. Exportações e armazenamento local exigem que o usuário guarde seus arquivos; limpar dados do navegador pode removê-los. Esta melhoria não representa auditoria integral de todas as dependências upstream.
+
+A hospedagem obtém o aplicativo completo da revisão imutável indicada em `native-source.json`, no repositório público deste fork. O script valida a revisão antes de copiar os arquivos e é executado no prebuild. Não publica diretórios de servlets WEB-INF nem páginas JSP como arquivos estáticos. A pasta public é um resultado de preparação; o código-fonte nativo integral e os créditos permanecem no fork.
